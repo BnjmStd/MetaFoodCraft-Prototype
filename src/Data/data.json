@@ -1,0 +1,256 @@
+{
+    "alimentos": [
+        {
+            "id": 1,
+            "nombre": "Manzana",
+            "marca": "Del Huerto",
+            "precio": 0.50,
+            "cantidad": 100,
+            "categoria": "Frutas y Verduras",
+            "imagen": "http://dummyimage.com/200x100.png/cc0000/ffffff"
+        },
+        {
+            "id": 2,
+            "nombre": "Zanahoria",
+            "marca": "EcoGreen",
+            "precio": 0.30,
+            "cantidad": 150,
+            "categoria": "Frutas y Verduras",
+            "imagen": "http://dummyimage.com/200x100.png/cc0000/ffffff"
+        },
+        {
+            "id": 3,
+            "nombre": "Pechuga de Pollo",
+            "marca": "Granjas de la Sierra",
+            "precio": 5.00,
+            "cantidad": 50,
+            "categoria": "Carnes, Pescados y Mariscos",
+            "imagen": "http://dummyimage.com/200x100.png/00cc00/ffffff"
+        },
+        {
+            "id": 4,
+            "nombre": "Salmón",
+            "marca": "Mariscos del Norte",
+            "precio": 12.00,
+            "cantidad": 30,
+            "categoria": "Carnes, Pescados y Mariscos",
+            "imagen": "http://dummyimage.com/200x100.png/00cc00/ffffff"
+        },
+        {
+            "id": 5,
+            "nombre": "Leche Entera",
+            "marca": "La Vaquita",
+            "precio": 1.20,
+            "cantidad": 200,
+            "categoria": "Lácteos y Huevos",
+            "imagen": "http://dummyimage.com/200x100.png/0000cc/ffffff"
+        },
+        {
+            "id": 6,
+            "nombre": "Huevos",
+            "marca": "Granjas Felices",
+            "precio": 2.50,
+            "cantidad": 80,
+            "categoria": "Lácteos y Huevos",
+            "imagen": "http://dummyimage.com/200x100.png/0000cc/ffffff"
+        },
+        {
+            "id": 7,
+            "nombre": "Pan Integral",
+            "marca": "PanDelicia",
+            "precio": 2.00,
+            "cantidad": 60,
+            "categoria": "Panadería y Repostería",
+            "imagen": "http://dummyimage.com/200x100.png/cccc00/ffffff"
+        },
+        {
+            "id": 8,
+            "nombre": "Galletas de Chocolate",
+            "marca": "ChocoBites",
+            "precio": 1.50,
+            "cantidad": 100,
+            "categoria": "Panadería y Repostería",
+            "imagen": "http://dummyimage.com/200x100.png/cccc00/ffffff"
+        },
+        {
+            "id": 9,
+            "nombre": "Pasta Fusilli",
+            "marca": "Italiana",
+            "precio": 1.00,
+            "cantidad": 120,
+            "categoria": "Despensa",
+            "imagen": "http://dummyimage.com/200x100.png/00cccc/ffffff"
+        },
+        {
+            "id": 10,
+            "nombre": "Frijoles Negros",
+            "marca": "CasaDelCampo",
+            "precio": 0.90,
+            "cantidad": 90,
+            "categoria": "Despensa",
+            "imagen": "http://dummyimage.com/200x100.png/00cccc/ffffff"
+        },
+        {
+            "id": 11,
+            "nombre": "Verduras Mixtas Congeladas",
+            "marca": "Frescor",
+            "precio": 1.20,
+            "cantidad": 60,
+            "categoria": "Congelados",
+            "imagen": "http://dummyimage.com/200x100.png/cc00cc/ffffff"
+        },
+        {
+            "id": 12,
+            "nombre": "Pizza Congelada",
+            "marca": "Pizzalandia",
+            "precio": 3.50,
+            "cantidad": 40,
+            "categoria": "Congelados",
+            "imagen": "http://dummyimage.com/200x100.png/cc00cc/ffffff"
+        },
+        {
+            "id": 13,
+            "nombre": "Jugo de Naranja",
+            "marca": "NaturalJuice",
+            "precio": 1.80,
+            "cantidad": 100,
+            "categoria": "Bebidas",
+            "imagen": "http://dummyimage.com/200x100.png/cc6600/ffffff"
+        },
+        {
+            "id": 14,
+            "nombre": "Agua Mineral",
+            "marca": "AquaPura",
+            "precio": 0.90,
+            "cantidad": 200,
+            "categoria": "Bebidas",
+            "imagen": "http://dummyimage.com/200x100.png/cc6600/ffffff"
+        },
+        {
+            "id": 15,
+            "nombre": "Papas Fritas",
+            "marca": "CrispyChips",
+            "precio": 1.00,
+            "cantidad": 150,
+            "categoria": "Snacks y Dulces",
+            "imagen": "http://dummyimage.com/200x100.png/66cc00/ffffff"
+        },
+        {
+            "id": 16,
+            "nombre": "Chocolate con Almendras",
+            "marca": "ChocoNut",
+            "precio": 1.20,
+            "cantidad": 100,
+            "categoria": "Snacks y Dulces",
+            "imagen": "http://dummyimage.com/200x100.png/66cc00/ffffff"
+        },
+        {
+            "id": 17,
+            "nombre": "Quinoa Orgánica",
+            "marca": "BioGrain",
+            "precio": 3.00,
+            "cantidad": 50,
+            "categoria": "Productos Dietéticos y Saludables",
+            "imagen": "http://dummyimage.com/200x100.png/6600cc/ffffff"
+        },
+        {
+            "id": 18,
+            "nombre": "Leche de Almendra",
+            "marca": "NutriMilk",
+            "precio": 2.50,
+            "cantidad": 70,
+            "categoria": "Productos Dietéticos y Saludables",
+            "imagen": "http://dummyimage.com/200x100.png/6600cc/ffffff"
+        },
+        {
+            "id": 19,
+            "nombre": "Salsa de Soja",
+            "marca": "AsiaFlavors",
+            "precio": 2.00,
+            "cantidad": 80,
+            "categoria": "Comida Internacional",
+            "imagen": "http://dummyimage.com/200x100.png/0066cc/ffffff"
+        },
+        {
+            "id": 20,
+            "nombre": "Tortillas de Maíz",
+            "marca": "MexiFood",
+            "precio": 1.50,
+            "cantidad": 60,
+            "categoria": "Comida Internacional",
+            "imagen": "http://dummyimage.com/200x100.png/0066cc/ffffff"
+        },
+        {
+            "id": 21,
+            "nombre": "Cerveza Rubia",
+            "marca": "GoldenBrew",
+            "precio": 1.20,
+            "cantidad": 90,
+            "categoria": "Bebidas Alcohólicas",
+            "imagen": "http://dummyimage.com/200x100.png/cc0066/ffffff"
+        },
+        {
+            "id": 22,
+            "nombre": "Vino Tinto",
+            "marca": "VinoNoble",
+            "precio": 8.00,
+            "cantidad": 40,
+            "categoria": "Bebidas Alcohólicas",
+            "imagen": "http://dummyimage.com/200x100.png/cc0066/ffffff"
+        },
+        {
+            "id": 23,
+            "nombre": "Papilla de Frutas",
+            "marca": "BabyDelight",
+            "precio": 1.50,
+            "cantidad": 60,
+            "categoria": "Productos para Bebés",
+            "imagen": "http://dummyimage.com/200x100.png/66cc66/ffffff"
+        },
+        {
+            "id": 24,
+            "nombre": "Fórmula Infantil",
+            "marca": "BabyCare",
+            "precio": 10.00,
+            "cantidad": 30,
+            "categoria": "Productos para Bebés",
+            "imagen": "http://dummyimage.com/200x100.png/66cc66/ffffff"
+        },
+        {
+            "id": 25,
+            "nombre": "Pan de Molde",
+            "marca": "SoftBread",
+            "precio": 1.80,
+            "cantidad": 100,
+            "categoria": "Productos de Panadería Industrial",
+            "imagen": "http://dummyimage.com/200x100.png/cc6666/ffffff"
+        },
+        {
+            "id": 26,
+            "nombre": "Pan de Hamburguesa",
+            "marca": "BurgerBread",
+            "precio": 1.50,
+            "cantidad": 80,
+            "categoria": "Productos de Panadería Industrial",
+            "imagen": "http://dummyimage.com/200x100.png/cc6666/ffffff"
+        },
+        {
+            "id": 27,
+            "nombre": "Pan Sin Gluten",
+            "marca": "GlutenFree",
+            "precio": 2.50,
+            "cantidad": 50,
+            "categoria": "Dietética y Productos Sin Alergénicos",
+            "imagen": "http://dummyimage.com/200x100.png/66cccc/ffffff"
+        },
+        {
+            "id": 28,
+            "nombre": "Galletas Sin Azúcar",
+            "marca": "SugarFree",
+            "precio": 2.00,
+            "cantidad": 70,
+            "categoria": "Dietética y Productos Sin Alergénicos",
+            "imagen": "http://dummyimage.com/200x100.png/66cccc/ffffff"
+        }
+    ]
+}

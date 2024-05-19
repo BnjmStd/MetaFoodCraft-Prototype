@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: aliceblue;
+    flex-flow: wrap row;
+    text-overflow: ellipsis;
+
+    & .logo {
+        color: black;
+        font-size: larger;
+        text-decoration: none;
+    }
+
+    & .menu {
+        display: flex;
+        flex-flow: wrap row;
+        gap: 1rem;
+        
+        & .menu-link {
+            color: black;
+            text-decoration: none;
+            list-style: none;
+        }
+    }
+}
