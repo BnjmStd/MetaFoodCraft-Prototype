@@ -4,12 +4,15 @@ import "./navbar.css"
 export default function Navbar() {
     return (
         <nav className="navbar">
-            <a href="#" className="logo"><h1>MetaFoodCraft</h1></a>
-            <ul className="menu">
-                <li><Link className="menu-link" to="/">Inicio</Link></li>
-                <li><Link className="menu-link" to="/nosotros">Nosotros</Link></li>
-                <li><Link className="menu-link" to="#">Productos</Link></li>
-                <li><Link className="menu-link" to="#">Contacto</Link></li>
+            <ul className="first-menu">
+                <li><a className="logo">MetaFoodCraft</a></li>
+                <li><Link className="menu-link" to="/Home">Home</Link></li>
+                <li><Link className="menu-link" to="/nosotros">Bd</Link></li>
+            </ul>
+            <ul className="second-menu">
+                <li><Link className="menu-link" to="/contacto">Contact</Link></li>
+                <li><Link className="login" to="/">Log In</Link></li>
+                <li><Link className="singup" to="/" >Sing Up</Link></li>
             </ul>
         </nav>
     )  

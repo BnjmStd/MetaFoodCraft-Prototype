@@ -1,28 +1,96 @@
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+li {
+    list-style: none;
+}
+
 .navbar {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    gap: 1rem;
+    justify-content: space-between;
     padding: 1rem;
-    background-color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.9);
     flex-flow: wrap row;
-    text-overflow: ellipsis;
 
-    & .logo {
-        color: black;
-        font-size: larger;
-        text-decoration: none;
+    & .first-menu {
+        margin: 0 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
     }
 
-    & .menu {
+    & .second-menu {
+        margin: 0 20px;
         display: flex;
         flex-flow: wrap row;
+        justify-content: flex-end;
+        align-items: center;
         gap: 1rem;
-        
-        & .menu-link {
-            color: black;
-            text-decoration: none;
-            list-style: none;
-        }
+    }
+}
+
+.menu-link {
+    color: rgba(161, 161, 161, 0.9);
+    padding: 5px;
+    position: relative;
+
+    &::before,
+    &::after {
+        position: absolute;
+        content: '';
+        width: 0%;
+        height: 1px;
+        background-color: #fff;
+        transition: .3s all ease-in-out;
+    }
+
+    &::before {
+        top: 0;
+        left: 0;
+    }
+
+    &::after {
+        bottom: 0;
+        right: 0;
+    }
+
+    &:hover::before {
+        right: 0;
+        left: auto;
+        width: 100%;
+    }
+
+    &:hover::after {
+        right: auto;
+        left: 0;
+        width: 100%;
+    }
+}
+
+.login {
+    border: 2px solid rgba(189, 189, 189, 0.8);
+    padding: 6px;
+    border-radius: 6px;
+    width: fit-content;
+
+    &:hover {
+        background: rgba(108, 108, 108, 0.882);
+    }
+}
+
+.singup {
+    padding: 6px;
+    border-radius: 6px;
+    width: fit-content;
+    background: white;
+    color: black;
+
+    &:hover {
+        background: rgba(108, 108, 108, 0.882);
+        color: white;
     }
 }
