@@ -1,8 +1,15 @@
-import { Link } from "react-router-dom"
 import "./navbar.css"
 import { Moon, Sun } from "../../Icon/Icon"
+import { useStore } from "../../store/theme"
 
 export default function Navbar() {
+
+    const { 
+        changeTheme,
+     } = useStore(state => ({
+        changeTheme: state.changeTheme
+     }))
+
     return (
         <nav className="navbar">
             <ul className="first-menu">
@@ -10,15 +17,19 @@ export default function Navbar() {
             </ul>
             <ul className="second-menu">
                 <label>
-                    <input type="checkbox" />
+                    <input 
+                        onChange={ changeTheme }
+                        type="checkbox"  />
                     <Sun className="sun"/>
                     <Moon className="moon" />
                     <span className="toggle"></span>
                     <span className="animateWindow"></span>
                 </label>
-                <li><Link className="login" to="/">Log In</Link></li>
-                <li><Link className="singup" to="/" >Sing Up</Link></li>
             </ul>
+            
         </nav>
     )  
 }
+
+/*                <li><Link className="login" to="/">Log In</Link></li>
+                <li><Link className="singup" to="/" >Sing Up</Link></li> */

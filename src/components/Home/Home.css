@@ -29,6 +29,15 @@
             & p {
                 opacity: 0.7;
             }
+
+            & a {
+                font-size:x-large;
+                text-decoration: none;
+                background: #09f;
+                border-radius: 10px;
+                color: white;
+                padding: 5px;
+            }
         }
     }
 }
@@ -64,6 +73,7 @@ img {
 @keyframes colorsChange {
     25% {
         color: rgb(238, 238, 58);
+        transform: rotateX(2px);
     }
     50% {
         color: rgb(158, 76, 235);

@@ -120,11 +120,13 @@ input:checked~.toggle {
     width: 100vw;
     height: 100vh;
     background: #fff;
-    z-index: -2;
+    z-index: -99;
     clip-path: circle(0% at 50% 50%);
     transition: 1.0s ease-out;
 }
+
 input:checked ~ .animateWindow {
     clip-path: circle(150% at 50% 50%);
 }
 */
+

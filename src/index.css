@@ -1,5 +1,6 @@
 :root {
-  color-scheme: dark;
+  --theme: dark;
+  color-scheme: var(--theme);
 }
 
 * {

@@ -1,4 +1,5 @@
 import './Home.css'
+import { Link } from "react-router-dom"
 
 export default function Home() {
 
@@ -12,7 +13,7 @@ export default function Home() {
                     <img src="https://github.com/BnjmStd.png" alt="Logo" />
                 </header>
                 <footer>
-                    <p> ~ Grid & Code ~ </p><button>Leer más</button>
+                    <p> ~ Grid & Code ~ </p><Link to={'/sections'}> Leer más </Link>
                 </footer>
             </section>
         </main>
