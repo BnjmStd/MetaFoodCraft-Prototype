@@ -1,18 +1,18 @@
-a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
 li {
     list-style: none;
+
+    & a {
+        text-decoration: none;
+    }
 }
 
 .navbar {
+    position: fixed;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.9);
     flex-flow: wrap row;
 
     & .first-menu {
@@ -30,44 +30,6 @@ li {
         justify-content: flex-end;
         align-items: center;
         gap: 1rem;
-    }
-}
-
-.menu-link {
-    color: rgba(161, 161, 161, 0.9);
-    padding: 5px;
-    position: relative;
-
-    &::before,
-    &::after {
-        position: absolute;
-        content: '';
-        width: 0%;
-        height: 1px;
-        background-color: #fff;
-        transition: .3s all ease-in-out;
-    }
-
-    &::before {
-        top: 0;
-        left: 0;
-    }
-
-    &::after {
-        bottom: 0;
-        right: 0;
-    }
-
-    &:hover::before {
-        right: 0;
-        left: auto;
-        width: 100%;
-    }
-
-    &:hover::after {
-        right: auto;
-        left: 0;
-        width: 100%;
     }
 }
 
@@ -94,3 +56,75 @@ li {
         color: white;
     }
 }
+
+label {
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+input {
+    position: absolute;
+    opacity: 0;
+}
+
+.sun {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, .5));
+    transform: scale(0);
+    transition: 1s ease;
+    transition-delay: .3s;
+}
+
+input:checked~.sun{
+    transition-delay: 0;
+    transform: scale(1) rotate(360deg);
+}
+
+.moon {
+    width: 32px;
+    height: 32px;
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.5));
+    transition: 1s ease;
+}
+
+input:checked~.moon {
+    transform: rotate(360deg) scale(0);
+}
+
+.toggle {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 1s;
+    background: rgba(74, 74, 74, 0.501);
+    z-index: -1;
+}
+
+input:checked~.toggle {
+    background: #fff;
+}
+
+/*
+.animateWindow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    z-index: -2;
+    clip-path: circle(0% at 50% 50%);
+    transition: 1.0s ease-out;
+}
+input:checked ~ .animateWindow {
+    clip-path: circle(150% at 50% 50%);
+}
+*/

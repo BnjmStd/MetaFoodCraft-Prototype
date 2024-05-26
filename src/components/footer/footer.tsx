@@ -1,5 +1,5 @@
 export default function Footer() {
     return (
-        <h2>Footer</h2>
+        <h2>To do: Footer</h2>
     )
 }
