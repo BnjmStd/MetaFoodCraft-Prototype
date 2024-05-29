@@ -22,7 +22,7 @@ export const useStore = create<State>()((set, get) => {
                 return res.json();
             })
             .then(json => {
-                console.log(`~ Json enviado: `)
+                console.log(`~ Json enviado: ${limit}`)
                 set({ sections: json });
             })
             .catch(error => {
