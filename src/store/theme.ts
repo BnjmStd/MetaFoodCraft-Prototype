@@ -1,14 +1,14 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { type Food } from '../types'
 
 interface State {
     currentTheme: string
-    sections: []
+    sections: Food[]
     changeTheme: () => void
     handleSections: (limit: number) => Promise<void>
 }
 
-export const useStore = create<State>()(persist((set, get) => {
+export const useStore = create<State>()((set, get) => {
     return {
         sections: [],
         currentTheme: 'dark',
@@ -22,8 +22,8 @@ export const useStore = create<State>()(persist((set, get) => {
                 return res.json();
             })
             .then(json => {
-                const sections = json
-                set({ sections: sections });
+                console.log(`~ Json enviado: `)
+                set({ sections: json });
             })
             .catch(error => {
                 console.error(`~ Error fetch ${error}`);
@@ -36,6 +36,4 @@ export const useStore = create<State>()(persist((set, get) => {
             set({ currentTheme: postTheme })
         }
     }
-}, {
-    name: 'theme'
-}))
+})

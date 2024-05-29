@@ -18,6 +18,17 @@
             display: flex;
             flex-flow: wrap row;
             gap: 100px;
+
+            & h1 > strong {
+                color: #09f;
+                transition: 0.1s ease;
+                animation: colorsChange 8s infinite;
+            }
+            
+            img {
+                width: 150px;
+                height: 150px;
+            }
         }
 
         & footer {
@@ -40,34 +51,6 @@
             }
         }
     }
-}
-
-strong {
-    color: #09f;
-    transition: 0.1s ease;
-    animation: colorsChange 10s infinite;
-}
-
-button {
-    border-radius: 8px;
-    padding: 5px;
-    max-width: 120px;
-    font-size: large;
-    width: fit-content;
-    height: auto;
-    transition: .2s ease;
-    background:#09f;
-    color: black;
-
-    &:hover {
-        transform: scale(1.1);
-        background:rgba(0, 153, 255, 0.5);
-    }
-}
-
-img {
-    width: 150px;
-    height: 150px;
 }
 
 @keyframes colorsChange {

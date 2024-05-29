@@ -7,8 +7,7 @@ li {
 }
 
 .navbar {
-    position: fixed;
-    width: 100vw;
+    position: block;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,7 +56,7 @@ li {
     }
 }
 
-label {
+.label-navbar {
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -66,7 +65,7 @@ label {
     position: relative;
 }
 
-input {
+.input-navbar {
     position: absolute;
     opacity: 0;
 }
@@ -81,7 +80,7 @@ input {
     transition-delay: .3s;
 }
 
-input:checked~.sun{
+.input-navbar:checked~.sun{
     transition-delay: 0;
     transform: scale(1) rotate(360deg);
 }
@@ -93,7 +92,7 @@ input:checked~.sun{
     transition: 1s ease;
 }
 
-input:checked~.moon {
+.input-navbar:checked~.moon {
     transform: rotate(360deg) scale(0);
 }
 
@@ -108,7 +107,7 @@ input:checked~.moon {
     z-index: -1;
 }
 
-input:checked~.toggle {
+.input-navbar:checked~.toggle {
     background: #fff;
 }
 

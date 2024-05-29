@@ -16,8 +16,8 @@ export default function Navbar() {
                 <li><a className="logo"><h1>MetaFoodCraft</h1></a></li>
             </ul>
             <ul className="second-menu">
-                <label>
-                    <input 
+                <label className="label-navbar"> 
+                    <input className="input-navbar"
                         onChange={ changeTheme }
                         type="checkbox"  />
                     <Sun className="sun"/>
@@ -26,7 +26,6 @@ export default function Navbar() {
                     <span className="animateWindow"></span>
                 </label>
             </ul>
-            
         </nav>
     )  
 }
