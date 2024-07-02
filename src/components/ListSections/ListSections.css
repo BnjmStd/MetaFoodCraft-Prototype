@@ -1,13 +1,16 @@
 .container-sections {
 
+    margin: 0 auto;
+    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
     gap: 10px;
-    width: 100%;
-    margin: 0 auto;
-
+    flex-grow: 1;
+    min-height: 100vh;
+    
     & .container-input {
 
         margin: 10px auto;
@@ -45,11 +48,6 @@
             background: #fff;
             color: #333;
         }
-
-        & button {
-            background: #09f;
-            border-radius: 10px;
-        }
     }
 
     & .sections {
@@ -75,7 +73,7 @@
             padding: 10px;
             text-wrap: wrap;
             text-align: center;
-            box-shadow: 13px 15px 6px -5px rgba(128,128,133,1);
+            box-shadow: 0 8px 6px -5px rgba(128,128,133,1);
             cursor: pointer;
         }
 
@@ -87,3 +85,29 @@
         }
     }
 } 
+
+.loading {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .spinner {
+        border: 4px solid rgb(0, 255, 251);
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border-left-color: transparent;
+        animation: spin 1s linear infinite;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

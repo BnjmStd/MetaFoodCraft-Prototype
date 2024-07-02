@@ -13,7 +13,8 @@ li {
     justify-content: space-between;
     padding: 1rem;
     flex-flow: wrap row;
-
+    position: relative;
+    z-index: 10;
     & .first-menu {
         margin: 0 20px;
         display: flex;

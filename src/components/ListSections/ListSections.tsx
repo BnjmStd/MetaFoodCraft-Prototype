@@ -26,6 +26,10 @@ export default function ListSections() {
         setSearch(e.target.value.toLowerCase())
     }
 
+    const filteredCategories = uniqueCategories.filter((item) =>
+        search.toLowerCase() === '' ? item : item.toLowerCase().includes(search.toLowerCase())
+      );
+
     return (
         <div className='container-sections'>
             <h1> <strong> Food </strong> sections </h1>
@@ -43,18 +47,22 @@ export default function ListSections() {
                 >
                     Search sections: 
                 </span>
-                <button> ~ Search</button>
             </label>
             <ul className="sections">
+            
             {
-                sections && uniqueCategories.filter((item) => {
-                    return search.toLowerCase() === ''
-                        ? item 
-                        : item.toLowerCase().includes(search)
-                }).map((categoria, index) => (
-                    <li key={index}><Link className="secc" to={"/"}> { categoria } </Link></li>
-                ))
-            }
+                sections && filteredCategories.length > 0 
+                ? (
+                    filteredCategories.map((categoria, index) => (
+                    <li key={index}>
+                        <Link className="secc" to={"/"}>{categoria}</Link>
+                    </li>
+                    ))
+                ) : (
+                    <div className='loading'>
+                        <span className='spinner'></span>
+                    </div>   
+                )}
             </ul>
         </div>
     )
